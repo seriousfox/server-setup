@@ -22,17 +22,25 @@ Unicorn
 
 
 # Getting Started
-1. Login to the server as root and clone the install.sh
-2. chmod +x install.sh
-3. ./install.sh
-4. Logout and login as deployer
-5. Clone ruby-setup.sh nginx.sh
-6. chmod +x ruby-setup.sh nginx.sh
-7. sudo ./ruby-setup.sh
-8. source .bash_profile
-9. sudo ./nginx.sh
 
+## As Root
+	wget https://github.com/seriousfox/server-setup/raw/master/install.sh
+	chmod +x install.sh
+	./install.sh
 
-**On YOUR MACHINE**
+*On YOUR MACHINE*
 scp ~/.ssh/id_rsa.pub deploy@server.com:
 ssh server.com -l deploy
+
+## Login as deployer
+	wget https://raw.github.com/seriousfox/server-setup/master/deployer/ruby-setup.sh
+	
+	chmod +x ruby-setup.sh
+	
+	wget https://raw.github.com/seriousfox/server-setup/master/deployer/nginx.sh
+	
+	chmod +x ruby-setup.sh
+	
+	./ruby-setup.sh
+	  
+	./nginx.sh
