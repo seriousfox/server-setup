@@ -29,17 +29,21 @@ Unicorn
 	./install.sh
 
 *On YOUR MACHINE*
-scp ~/.ssh/id_rsa.pub deploy@server.com:
-ssh server.com -l deploy
+
+	scp ~/.ssh/id_rsa.pub deploy@server.com:
+
+	ssh deploy@server.com
+
+	cat id_rsa.pub >> .ssh/authorized_keys
 
 ## Login as deployer
 	wget https://raw.github.com/seriousfox/server-setup/master/deployer/ruby-setup.sh
 	
-	chmod +x ruby-setup.sh
-	
 	wget https://raw.github.com/seriousfox/server-setup/master/deployer/nginx.sh
 	
 	chmod +x ruby-setup.sh
+	
+	chmod +x nginx.sh
 	
 	./ruby-setup.sh
 	  
