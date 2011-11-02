@@ -1,7 +1,3 @@
-# Serious Fox Servers
-ssh root@50.57.172.73
-server-test343bdFXOq
-
 ## Needs
 
 *Security*
